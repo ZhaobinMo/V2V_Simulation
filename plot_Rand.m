@@ -6,6 +6,10 @@ Margin = 1.1;
 ColorOrder = makeColorMap([0 1 0],[1 0 0],[0 0 1],TJ_MAX);
 
 
+%Plot the first point (as the original point)
+% scatter(Position{1}.LongitudeWsu(1),Position{1}.LatitudeWsu(1),20,[1,1,1],'filled');
+scatter(Position{1}.LongitudeWsu(1),Position{1}.LatitudeWsu(1),30,'+w');
+
 %Plot the trajectory in one map
 for i=1:TJ_MAX
     disp(['i = ' num2str(i)]);
